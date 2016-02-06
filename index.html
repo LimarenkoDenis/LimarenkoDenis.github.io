@@ -2,15 +2,291 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Tripfinder</title>
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<style>
-	.fa-instagram{
-		font-size: 500px}
-		</style>
 </head>
-<body>
-	<i class="fa fa-instagram"></i>
-	<h1>Hello World!</h1>
+<body class="index-page">
+
+<header class="header-bg">
+	
+	<!-- тоненькая линия хедер с соц сятями и иконками -->
+		<div class="top_info clearfix">
+		<div class="center_wrap">
+			<ul class="mail">
+				<li><a class="telephone" href="">+1 400-600-88</a></li>
+				<li><a class="site" href="">hello.websie.com</a></li>
+				<li><a class="data" href="">6am-11am</a></li>
+			</ul>
+			<ul class="social_info"><!-- при наведении пропадают иконки -->
+				<!-- можно оставить пустым li>a/ через библиотеку font-awesome было бы лучше, но я уже сделал спрайт , поэтому через фон -->
+				<li><a href="" class="social_fb" title=""></a></li>
+				<li><a href="" class="social_tw" title=""></a></li>
+				<li><a href="" class="social_inst" title=""></a></li>
+				<li><a href="" class="social_yb" title=""></a></li>
+				<li><a href="" class="social_ws" title=""></a></li>
+				<li><a href="" class="social_sear" title=""></a></li>
+			</ul>
+		</div>
+		</div>
+
+<!-- блок с слева-лого и справа- навигация -->
+		<div class="navigation ">
+		<div class="center_wrap  clearfix">
+			<div class="main_logo">
+			<!-- при наведении пропадает лого -->
+				<!-- <img src="img/logo.png" alt=""> -->
+				<a href="#">TRIP<span class="logo">FINDER</span>
+				<!-- тут неполучилось этот текст расположить четко под TRIPFINDER -->
+				<!-- <span class="logo2">PSDFRIBIES.COM</span> --></a>
+			</div>
+			<nav class="top_menu">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Gallery</a></li>
+					<li><a href="">Activities</a></li>
+					<li><a href="">Dials</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+
+<!-- блок с большим заголовком и формой поиска -->
+			<div class="header_content center_wrap clearfix">
+				<div class="header_title">
+					<h1 >Where your journey begins.</h1>
+					<p>Discover your next great adventure, become an explorer to get started!</p>
+				</div>
+				<div class="search_form">
+					<h1>Search tours</h1>
+					<p>Find your drim tour today!</p>
+					<form action="">
+						<label for="serch">
+							<input id="serch" type="serch" placeholder="Search Tour">
+						</label>
+						<input type="text" placeholder="Destination">
+						<input type="text" placeholder="Tour Type">
+						<input type="month" placeholder="Month"><br>	
+						<a href="">Find tours</a>
+					</form>
+				</div>
+			</div>
+
+<!-- низ хедера (футер хедера :) -->
+			<div class="header-bottom">
+			<div class="center_wrap">
+				<div class="header_description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi aliquid perspiciatis fugiat repudiandae laudantium illum quasi, sunt ad omnis? Sequi dignissimos accusantium minima.
+				</div>
+			</div>
+			</div>
+</header>
+
+
+
+<main class="">
+<!-- блок с 4-мя изображениями сан франциско и тд -->
+	<section class="tour-type-bg">
+	<div class="center_wrap clearfix">	
+		<div class="tour-type_title">
+			<h1 class="title">Find a Tour by Tour Type</h1>
+			<p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
+		</div>
+		<div class="tour-type_places clearfix">
+			<div class="north-america  type"><h2>North America</h2></div>
+			<div class="west-america  type"><h2>North America</h2></div>
+			<div class="san-francisco  type"><h2>San Francisco</h2></div>
+			<div class="amason  type"><h2>Amason Cruise</h2></div>
+		</div>
+	</div>
+	</section>   <!-- san francisco -->
+
+<!-- три колонки , можно flex ом сверстать -->
+	<section class="deals-bg  ">
+	<div class="center_wrap clearfix">
+		<div class="deals-title">
+			<h1 class="title">Dials and Discounts</h1>
+		</div>
+		<div class="column-left   column">
+			<img src="img/serfing1.jpg" alt="" width="100%">
+			<div class="price">
+				<span class="last-worth">$400</span>
+				$300
+			</div>
+			<h2>SURFING</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis eos dicta reprehenderit neque, cumque!</p>
+			<a href="">Book now</a>
+		</div>
+		<div class="column-center column">
+			<img src="img/serfing2.jpg" alt="" width="100%">
+			<div class="price">
+				<span class="last-worth">$400</span>
+				$300
+			</div>
+			<h2>SURFING</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis eos dicta reprehenderit neque, cumque!</p>
+			<a href="">Book now</a>
+		</div>
+		<div class="column-right  column">
+			<img src="img/serfing3.jpg" alt="" width="100%">
+			<div class="price">
+				<span class="last-worth">$400</span>
+				$300
+			</div>
+			<h2>SURFING</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis eos dicta reprehenderit neque, cumque!</p>
+			<a href="">Book now</a>
+		</div>
+	</div>
+	</section>  <!-- serfing -->
+
+<!-- cекция с галереей -->
+	<section class="gallery-bg">
+	
+		<div class="gallery-title">
+			<h1 class="title">Find a Tour by Beautiful Trips</h1>
+		</div>
+		<div class="gallery clearfix">
+			<div class="gallery-place1  place">
+			<img src="img/gallery/1.jpg"  alt="">
+					<h3>promotional trip</h3>
+					<p>Orlando, Air/3 Nights</p>
+					<a href="#">Know more</a>
+			</div>
+			<div class="gallery-place2  place">
+				<img src="img/gallery/2.jpg" alt="">
+				<h3>promotional trip</h3>
+				<p>Orlando, Air/3 Nights</p>
+				<a href="#">Know more</a>
+			</div>
+			<div class="gallery-place3  place">
+				<img src="img/gallery/3.jpg" alt="">
+				<h3>promotional trip</h3>
+				<p>Orlando, Air/3 Nights</p>
+				<a href="#">Know more</a>
+			</div>
+			<div class="gallery-place4  place">
+				<img src="img/gallery/4.jpg" width="530px" alt="">
+				<h3>promotional trip</h3>
+				<p>Orlando, Air/3 Nights</p>
+				<a href="#">Know more</a>
+			</div>
+			<div class="gallery-place5  place">
+				<img src="img/gallery/5.jpg" width="530px" alt="">
+				<h3>promotional trip</h3>
+				<p>Orlando, Air/3 Nights</p>
+				<a href="#">Know more</a>
+			</div>
+			<div class="gallery-place6  place">
+				<img src="img/gallery/6.jpg"  alt="">
+				<h3>promotional trip</h3>
+				<p>Orlando, Air/3 Nights</p>
+				<a href="#">Know more</a>
+			</div>
+		</div>
+	
+	</section>   <!-- gallery -->
+
+	<!-- новости  и события   3 колонки -->
+	<section class="news-events-bg">
+	<div class="center_wrap clearfix">
+		<div class="news-events-title">
+			<h1 class="title">News & Events</h1>
+			<p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio. </p>
+		</div>
+		<div class="news-events clearfix">
+			<div class="column-news  column-news-left">
+				<img src="img/news_1.jpg" alt="">
+				<div class="column-nows-description  clearfix">
+					<h4>Liveng the travel lifestyle</h4>
+					<div class="autor">Advmin</div>
+					<div class="time">May, 11, 2016</div>
+					<p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! </p>
+				</div>
+			</div>
+			<div class="column-news  column-news-center">
+				<img src="img/news_2.jpg" alt="">
+				<div class="column-nows-description">
+					<h4>Liveng the travel lifestyle</h4>
+					<div class="autor">Advmin</div>
+					<div class="time">May, 11, 2016</div>
+					<p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! </p>
+				</div>
+			</div>
+			<div class="column-news  column-news-right">
+				<img src="img/news_3.jpg" width="100%" alt="">
+				<div class="column-nows-description">
+					<h4>Liveng the travel lifestyle</h4>
+					<div class="autor">Advmin</div>
+					<div class="time">May, 11, 2016</div>
+					<p>Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! </p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	</section> <!-- news-events -->
+
+
+	<section class="luxury-bg">
+		<div class="center_wrap   clearfix">
+			<h1 class="luxury-title">Luxury travel</h1>
+			<p>Peace of mind cuaranteed!</p>
+			<a href="#">Finf tours</a>
+		</div>
+	</section> <!-- luxury -->
+</main>
+
+
+<footer>
+	<div class="center_wrap   clearfix">
+		<div class="footer-info clearfix">
+			<div class="footer-column foot-column-1">
+				<h3 class="footer-title">Findfinde llc</h3>
+				<address>
+					<span class="street">1400 Pennsylvania Ave. Washington, DC</span>
+					<span class="tel">P: 24/7 customer support: 1-555-555-5555</span>
+					<span class="email">E: info@tripfinder.com</span>
+				</address>
+			</div>
+			<div class="footer-column foot-column-2">
+				<h3 class="footer-title">Support</h3>
+				<address>
+					<a href="#" class="street">Faq</a><br>
+					<a href="#" class="tel">paymen option</a><br>
+					<a href="#" class="email">Booking tips</a>
+				</address>
+			</div>
+			<div class="footer-column foot-column-3">
+				<h3 class="footer-title">Follow us</h3>
+				<ul class="follow">
+					<li><a href=""><!-- <i class="fa fa-facebook"></i> --></a></li>
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+			<div class="footer-column foot-column-4">
+				<h3 class="footer-title">Newsletter</h3>
+				<form action="">
+					<input type="text" placeholder="Enter email">
+					<input type="submit" value="submit">
+				</form>
+			</div>
+		</div>
+		
+	</div>
+	<div class="footer-bottom ">
+			<div class="center_wrap    clearfix">
+				<div class="copyright">© PSDfreebies.com 2015. All rights reserved.</div>
+				<div class="design">Design by: <span class="bdgola"></span>Psd.freebies.com</div>
+			</div>
+		</div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
