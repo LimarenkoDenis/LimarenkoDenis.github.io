@@ -40,8 +40,6 @@
     padding: 0;
 }
 
-/*ПРОБЛЕМЫ С ФОНОМ, НЕМОГУ НАЛОЖИТЬ СЛОЙ ЗАТЕМНЕНИЯ, И + НА НЕКОТОРЫХ УСТРОЙСТВАХ ФОН НЕ РАСТЯГИВАЕТСЯ НА ВЕСЬ ЭКРАН*/
-
 body
 {
     font-family: 'Open Sans', sans-serif;
@@ -99,19 +97,19 @@ ul
 }
 .top_info
 {
-    opacity: .75;
+    /*opacity: .75;*/
     border-bottom: 2px solid #5f5f5f;
-    background: #3b3b3b;
+    background: rgba(59, 59, 59, 0.7);
 }
 .header-bg a
 {
-    opacity: 1;
+   /* opacity: 1;*/
     color: #fff;
 }
 .header-bg a:hover,
 .header-bg a:active
 {
-    background: #242424;
+    background: rgba(36, 36, 36, 0.5);
 }
 /*тонкая линия хедер с соц сетями и иконками*/
 
@@ -191,23 +189,25 @@ ul
 {
     display: inline-block;
 }
+.social_info i {
+   
+}
 .social_info a
 {
     display: block;
 
     width: 17px;
     height: 17px;
-    margin: 10px 18px;
-
-    border-radius: 50%;
+    padding: 10px 18px;
+    
+    /*border-radius: 50%;*/
 }
-.social_info li:hover
+.social_info a:hover
 {
-    opacity: .5;
-    background: #fff;
+    background: rgba(36, 36, 36, 0.5);
 }
 /*тут ширину и высоту вынести можно было бы*/
-.social_fb
+/*.social_fb
 {
     background: url(../img/spritesheet.png);
     background-position: -5px -193px;
@@ -232,15 +232,15 @@ ul
 {
     background: url(../img/spritesheet.png);
     background-position: -5px -109px;
-}
+}*/
 
 /*навигация*/
 .navigation
 {
     margin-bottom: 110px;
 
-    opacity: .75;
-    background: #3b3b3b;
+    /*opacity: .75;*/
+     background: rgba(59, 59, 59, 0.7);
 }
 .main_logo
 {
@@ -407,8 +407,8 @@ input[type='serch']:after
 {
     padding: 60px;
 
-    opacity: .5;
-    background-color: #479fff;
+    /*opacity: .5;*/
+    background: rgba(71, 159, 255, 0.5);
 }
 .header_description
 {
@@ -475,7 +475,7 @@ input[type='serch']:after
 /*незнаю как затемнить фон , текст плохо видно*/
 .north-america
 {
-    opacity: 60%;
+    /*opacity: 60%;*/
     background: url(../img/america.jpg);
 }
 .west-america
@@ -501,7 +501,7 @@ input[type='serch']:after
 /*немогу наложить синий фон*/
 .deals-bg
 {
-    background:#000 url(../img/bg_maimn2.jpg);
+    background-image: url(../img/bg_maimn2.jpg);
     background-size: cover;
 }
 .deals-title .title
@@ -623,7 +623,7 @@ p
 }
 .gallery
 {
-    width: 1300px;
+    width: 100%;
     margin: 0 auto;
 
     background: white;
@@ -634,7 +634,7 @@ p
 
     float: left;
 
-    width: 33%;
+    width: 33.33333%;
     height: 400px;
     margin: 0;
     padding: 0;
@@ -812,7 +812,7 @@ background: url(../img/gallery/6.jpg);
 
     text-align: center;
     vertical-align: bottom;
-
+    line-height: 155px;
     color: #fff;
     border-radius: 50%;
     background: #47a0ff;
@@ -829,6 +829,9 @@ background: url(../img/gallery/6.jpg);
 footer
 {
     background: #fff;
+}
+address a{
+    color:#606060;
 }
 .footer-info
 {
@@ -874,7 +877,6 @@ footer
 
     width: 270px;
 
-    background: red;
 }
 .follow li
 {
@@ -891,22 +893,23 @@ footer
     height: 45px;
 
     border-radius: 50%;
-}
-.fa
-{
-    color: #fff;
-}
-.fa-facebook
-{
-    position: absolute;
-    top: 5px;
 
-    color: #fff;
+    background: #47a0ff
 }
+.follow li a:hover
+{
+    background: red
+}
+.follow .fa
+{
+    color: #fff;
+    margin: 14px;
+}
+
 
 /*тут нужно наверно менять sprite, потомучто соседние иконки видны*/
 /*вобщем переделать*/
-.follow li:first-child
+/*.follow li:first-child
 {
     background: #47a0ff url(../img/spritesheet.png) 30px 60px;
 }
@@ -925,7 +928,7 @@ footer
 .follow li:hover
 {
     opacity: .7;
-}
+}*/
 
 .foot-column-4 input[type='text']
 {
