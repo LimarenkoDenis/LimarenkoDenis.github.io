@@ -13,7 +13,6 @@
 }
 ::-webkit-scrollbar-track-piece
 {
-    -webkit-border-radius: 3px;
     background: #606060;
 }
 ::-webkit-scrollbar-thumb:vertical
@@ -22,7 +21,6 @@
 
     cursor: pointer;
 
-    -webkit-border-radius: 3px;
     background-color: #1565c8;
 }
 ::-webkit-scrollbar-thumb:horizontal
@@ -31,7 +29,6 @@
 
     cursor: pointer;
 
-    -webkit-border-radius: 3px;
     background-color: #1565c8;
 }
 *
@@ -139,7 +136,7 @@ ul
 {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 6px;
 
     width: 17px;
     height: 17px;
@@ -153,7 +150,7 @@ ul
 {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 6px;
 
     width: 17px;
     height: 17px;
@@ -167,7 +164,7 @@ ul
 {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 8px;
 
     width: 17px;
     height: 17px;
@@ -197,7 +194,7 @@ ul
     display: block;
 
     width: 17px;
-    height: 17px;
+    height: 15px;
     padding: 10px 18px;
     
     /*border-radius: 50%;*/
@@ -258,6 +255,7 @@ ul
     width: 200px;
     padding-top: 10px;
     padding-left: 60px;
+    padding-bottom: 10px;
 }
 .main_logo .logo
 {
@@ -602,7 +600,7 @@ p
 {
     float: left;
 
-    margin-right: 20px;
+    margin-right: 25px;
 }
 .column-center
 {
@@ -989,7 +987,62 @@ address a{
 
     width: 290px;
 }
-.bdgola
+/*.bdgola
 {
     background: url(../img/spritesheet.png) -5px -266px;
 }
+label{
+    position: relative;
+}
+label[for="serch"]::after {
+    background-position: -5px -193px;
+}
+label[for="serch"]:after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../img/spritesheet.png) no-repeat;
+    top: 5px;
+    left: 370px;
+}
+
+/*label[for="destination"]::after {
+    background-position: -7px -35px;
+}*/
+label[for="destination"]:after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../img/spritesheet.png) -5px -35px;
+    top: 5px;
+    left: 370px;
+}
+
+label[for="tour-type"]::after {
+    background-position: -7px -5px;
+}
+label[for="tour-type"]:after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../img/spritesheet.png) no-repeat;
+    top: 5px;
+    left: 370px;
+}
+
+label[for="month"]::after {
+    background-position: -7px -5px;
+}
+label[for="month"]:after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../img/spritesheet.png) no-repeat;
+    top: 5px;
+    left: 370px;
+}
+*/
