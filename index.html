@@ -65,17 +65,21 @@
 					<p>Find your drim tour today!</p>
 					<form action="">
 						<label for="serch">
-							<input id="serch" type="serch" placeholder="Search Tour">
+							<input id="serch" type="serch" placeholder="Search Tour" autofocus required>
+							<i class="fa fa-search"></i>
 						</label>
 						<label for="destination">
 							<input id="destination" type="text" placeholder="Destination">
+							<i class="fa fa-plane"></i>
 						</label>
 						<label for="tour-type">
-							<input type="text" placeholder="Tour Type">
+							<input id="tour-type" type="text" placeholder="Tour Type">
+							<i class="fa fa-bed"></i>
 						</label>
 						<label for="month">
-							<input type="date" placeholder="Month"><br>
-						</label>	
+							<input type="date" id="month" placeholder="Month"><br>
+							<i class="fa fa-calendar"></i>
+						</label>
 						<a href="">Find tours</a>
 					</form>
 				</div>
@@ -111,43 +115,45 @@
 	</section>   <!-- san francisco -->
 
 <!-- три колонки , можно flex ом сверстать -->
-	<section class="deals-bg  ">
-	<div class="center_wrap clearfix">
-		<div class="deals-title">
-			<h1 class="title">Dials and Discounts</h1>
-		</div>
-		<div class="column-left   column">
-			<img src="img/serfing1.jpg" alt="" width="100%">
-			<div class="price">
-				<span class="last-worth">$400</span>
-				$300
+<section class="deals-bg  ">
+	<div class="deals-bg-rgba"> <!-- сделал этот блок только чтоб наложить затемненниый фон, правиильно ли это?!-->
+		<div class="center_wrap clearfix">
+			<div class="deals-title">
+				<h1 class="title">Dials and Discounts</h1>
 			</div>
-			<h2>SURFING</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis eos dicta reprehenderit neque, cumque!</p>
-			<a href="">Book now</a>
-		</div>
-		<div class="column-center column">
-			<img src="img/serfing2.jpg" alt="" width="100%">
-			<div class="price">
-				<span class="last-worth">$400</span>
-				$300
+			<div class="column-left   column">
+				<img src="img/serfing1.jpg" alt="" width="100%">
+				<div class="price">
+					<span class="last-worth">$400</span>
+					$300
+				</div>
+				<h2>SURFING</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis eos dicta reprehenderit neque, cumque!</p>
+				<a href="">Book now</a>
 			</div>
-			<h2>SURFING</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis eos dicta reprehenderit neque, cumque!</p>
-			<a href="">Book now</a>
-		</div>
-		<div class="column-right  column">
-			<img src="img/serfing3.jpg" alt="" width="100%">
-			<div class="price">
-				<span class="last-worth">$400</span>
-				$300
+			<div class="column-center column">
+				<img src="img/serfing2.jpg" alt="" width="100%">
+				<div class="price">
+					<span class="last-worth">$400</span>
+					$300
+				</div>
+				<h2>SURFING</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis eos dicta reprehenderit neque, cumque!</p>
+				<a href="">Book now</a>
 			</div>
-			<h2>SURFING</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis eos dicta reprehenderit neque, cumque!</p>
-			<a href="">Book now</a>
+			<div class="column-right  column">
+				<img src="img/serfing3.jpg" alt="" width="100%">
+				<div class="price">
+					<span class="last-worth">$400</span>
+					$300
+				</div>
+				<h2>SURFING</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis eos dicta reprehenderit neque, cumque!</p>
+				<a href="">Book now</a>
+			</div>
 		</div>
 	</div>
-	</section>  <!-- serfing -->
+</section>  <!-- serfing -->
 
 <!-- cекция с галереей -->
 	<section class="gallery-bg">
@@ -157,10 +163,10 @@
 		</div>
 		<div class="gallery clearfix">
 			<div class="gallery-place1  place">
-			<img src="img/gallery/1.jpg"  alt="">
-					<h3>promotional trip</h3>
-					<p>Orlando, Air/3 Nights</p>
-					<a href="#">Know more</a>
+				<img src="img/gallery/1.jpg"  alt="">
+				<h3>promotional trip</h3>
+				<p>Orlando, Air/3 Nights</p>
+				<a href="#">Know more</a>
 			</div>
 			<div class="gallery-place2  place">
 				<img src="img/gallery/2.jpg" alt="">
@@ -287,7 +293,7 @@
 	<div class="footer-bottom ">
 			<div class="center_wrap    clearfix">
 				<div class="copyright">© PSDfreebies.com 2015. All rights reserved.</div>
-				<div class="design">Design by: <!-- <span class="bdgola"></span> <--><img src="#" alt=""></-->Psdfreebies.com</div>
+				<div class="design">Design by:  <!-- <span class="bdgola"></span> <img src="#" alt=""> <--><i class="bee"></i></-->Psdfreebies.com</div>
 			</div>
 		</div>
 </footer>

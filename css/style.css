@@ -180,11 +180,15 @@ ul
 {
     float: right;
 
-    width: 350px;
+    width: 420px;
 }
 .social_info li
 {
     display: inline-block;
+}
+.social_info li:last-child{
+    padding:0 30px;
+    border-left: 2px solid #3a3b38
 }
 .social_info i {
    
@@ -361,7 +365,20 @@ ul
 
     border-radius: 5px;
 }
-input[type='serch']
+/*ДРУГОЙ СПОСОБ. попробую добавить font-awsome и позиционировать*/
+
+label[for="month"], label[for="serch"], label[for="destination"],  label[for="tour-type"]{
+    position: relative;
+}
+
+
+.fa-calendar, .fa-plane,  .fa-bed,  .search_form .fa-search{
+    position: absolute;
+    top:5px;
+    left:370px;
+}
+
+/*input[type='serch']
 {
     position: relative;
 }
@@ -378,7 +395,7 @@ input[type='serch']:after
 
     background: url(../img/spritesheet.png);
     background-position: -5px -109px;
-}
+}*/
 
 .search_form a
 {
@@ -482,7 +499,8 @@ input[type='serch']:after
 }
 .san-francisco
 {
-    background: url(../img/san_francisco.jpg);
+    background: url(../img/san_francisco.jpg) rgba(0,0,0,1);
+    /*background: rgba(0,0,0,0.4);*/
 }
 .tour-type_places .amason
 {
@@ -501,6 +519,10 @@ input[type='serch']:after
 {
     background-image: url(../img/bg_maimn2.jpg);
     background-size: cover;
+    
+}
+.deals-bg-rgba{
+    background: rgba(0,0,0,0.1);
 }
 .deals-title .title
 {
@@ -625,6 +647,7 @@ p
     margin: 0 auto;
 
     background: white;
+    background: rgba(0,0,0,1);
 }
 .place
 {
@@ -636,16 +659,22 @@ p
     height: 400px;
     margin: 0;
     padding: 0;
+    background: rgba(0,0,0,0.1);
+}
+.place img:after{
+    width: 100%;
+    background: rgba(0,0,0,1);
 }
 .place img
 {
     width: 100%;
     height: 100%;
 }
-/*.gallery-place1{
-    background: url(../img/gallery/1.jpg);
-    background-size: cover;
-}
+
+/*.gallery-place2{
+    background: rgba(0,0,0,0.1);
+}*/
+/*
 .gallery-place5{
 background: url(../img/gallery/5.jpg);
     background-size: cover;
@@ -987,29 +1016,29 @@ address a{
 
     width: 290px;
 }
-/*.bdgola
+/*.design img
 {
+    width:200px;
     background: url(../img/spritesheet.png) -5px -266px;
-}
-label{
-    position: relative;
-}
-label[for="serch"]::after {
+}*/
+
+/*input[type="serch"]::after {
     background-position: -5px -193px;
 }
-label[for="serch"]:after{
+input[type="serch"]::after{
     position: absolute;
     content: "";
     width: 25px;
     height: 25px;
     background: url(../img/spritesheet.png) no-repeat;
+    background-position: -5px -193px;
     top: 5px;
     left: 370px;
-}
+}*/
 
 /*label[for="destination"]::after {
     background-position: -7px -35px;
-}*/
+}
 label[for="destination"]:after{
     position: absolute;
     content: "";
@@ -1044,5 +1073,6 @@ label[for="month"]:after{
     background: url(../img/spritesheet.png) no-repeat;
     top: 5px;
     left: 370px;
-}
-*/
+}*/
+
+
