@@ -1,36 +1,14 @@
-@font-face
-{
+@font-face {
     font-family: big_noodle_titling; /* Гарнитура шрифта */
+    font-weight: normal;
+    font-style: normal;
 
-    src: url(../fonts/big_noodle_titling.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/big_noodle_titling.ttf), /* Путь к файлу со шрифтом */
+    url('../fonts/big_noodle_titling.woff') format('woff'),
+    url('../fonts/big_noodle_titling.ttf') format('truetype'),
+    url('../fonts/big_noodle_titling.svg#BigNoodleTitling') format('svg');
 }
-::-webkit-scrollbar
-{
-    width: 10px;
-    height: 5px;
 
-    cursor: pointer;
-}
-::-webkit-scrollbar-track-piece
-{
-    background: #606060;
-}
-::-webkit-scrollbar-thumb:vertical
-{
-    height: 5px;
-
-    cursor: pointer;
-
-    background-color: #1565c8;
-}
-::-webkit-scrollbar-thumb:horizontal
-{
-    width: 10px;
-
-    cursor: pointer;
-
-    background-color: #1565c8;
-}
 *
 {
     margin: 0;
@@ -55,9 +33,14 @@ ul
     padding: 0;
 
     list-style: none;
-}a
+}
+a
 {
     text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
 }
 .center_wrap
 {
@@ -89,24 +72,24 @@ ul
     width: auto;
 
     background-image: url('../img/bg_header.jpg');
+    /*background-size: cover;*/
     /*background-size: 100%;*/
-    background-size: 100%;
 }
 .top_info
 {
     /*opacity: .75;*/
     border-bottom: 2px solid #5f5f5f;
-    background: rgba(59, 59, 59, 0.7);
+    background: rgba(59, 59, 59, .7);
 }
 .header-bg a
 {
-   /* opacity: 1;*/
+    /* opacity: 1;*/
     color: #fff;
 }
 .header-bg a:hover,
 .header-bg a:active
 {
-    background: rgba(36, 36, 36, 0.5);
+    background: rgba(36, 36, 36, .5);
 }
 /*тонкая линия хедер с соц сетями и иконками*/
 
@@ -186,62 +169,35 @@ ul
 {
     display: inline-block;
 }
-.social_info li:last-child{
-    padding:0 30px;
-    border-left: 2px solid #3a3b38
+.social_info li:last-child
+{
+    padding: 0 30px;
+
+    border-left: 2px solid #3a3b38;
 }
-.social_info i {
-   
-}
+
 .social_info a
 {
     display: block;
 
     width: 17px;
-    height: 15px;
+    height: 20px;
     padding: 10px 18px;
-    
     /*border-radius: 50%;*/
 }
 .social_info a:hover
 {
-    background: rgba(36, 36, 36, 0.5);
+    background: rgba(36, 36, 36, .5);
 }
-/*тут ширину и высоту вынести можно было бы*/
-/*.social_fb
-{
-    background: url(../img/spritesheet.png);
-    background-position: -5px -193px;
-}
-.social_tw
-{
-    background: url(../img/spritesheet.png);
-    background-position: -5px -217px;
-}.social_inst
-{
-    background: url(../img/spritesheet.png);
-    background-position: -5px -240px;
-}.social_yb
-{
-    background: url(../img/spritesheet.png);
-    background-position: -5px -266px;
-}.social_ws
-{
-    background: url(../img/spritesheet.png);
-    background-position: -5px -84px;
-}.social_sear
-{
-    background: url(../img/spritesheet.png);
-    background-position: -5px -109px;
-}*/
+
 
 /*навигация*/
 .navigation
 {
     margin-bottom: 110px;
-
     /*opacity: .75;*/
-     background: rgba(59, 59, 59, 0.7);
+
+    background: rgba(59, 59, 59, .7);
 }
 .main_logo
 {
@@ -258,8 +214,8 @@ ul
 
     width: 200px;
     padding-top: 10px;
-    padding-left: 60px;
     padding-bottom: 10px;
+    padding-left: 60px;
 }
 .main_logo .logo
 {
@@ -268,7 +224,7 @@ ul
 .main_logo .logo2
 {
     /*text-align: center;*/
-    font-family: Open sans;
+    font-family: 'Open Sans';
     font-size: 13px;
 }
 
@@ -315,7 +271,7 @@ ul
 }
 .header_title p
 {
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 30px;
 
     padding: 0 40px;
@@ -340,7 +296,7 @@ ul
 
     background: #fff;
 }
-.search_form h1
+.search_form h2
 {
     font-family: big_noodle_titling;
     font-size: 70px;
@@ -367,17 +323,28 @@ ul
 }
 /*ДРУГОЙ СПОСОБ. попробую добавить font-awsome и позиционировать*/
 
-label[for="month"], label[for="serch"], label[for="destination"],  label[for="tour-type"]{
+label[for='month'],
+label[for='serch'],
+label[for='destination'],
+label[for='tour-type']
+{
     position: relative;
 }
 
 
-.fa-calendar, .fa-plane,  .fa-bed,  .search_form .fa-search{
+.search_form .fa-calendar,
+.fa-plane,
+.fa-bed,
+.search_form .fa-search
+{
     position: absolute;
-    top:5px;
-    left:370px;
+    top: 5px;
+    left: 370px;
 }
-
+input#serch
+{
+    box-sizing: content-box;
+}
 /*input[type='serch']
 {
     position: relative;
@@ -421,9 +388,9 @@ input[type='serch']:after
 .header-bottom
 {
     padding: 60px;
-
     /*opacity: .5;*/
-    background: rgba(71, 159, 255, 0.5);
+
+    background: rgba(71, 159, 255, .5);
 }
 .header_description
 {
@@ -440,7 +407,14 @@ input[type='serch']:after
 .tour-type-bg
 {
     background-image: url('../img/bg_main.jpg');
-    background-size: cover;
+    /*  */
+}
+.tour-type-bg:after
+{
+    width: 100%;
+    height: 100%;
+
+    background: red;
 }
 .tour-type_title
 {
@@ -450,7 +424,7 @@ input[type='serch']:after
 
     text-align: center;
 }
-.tour-type_title h1
+.tour-type_title h2
 {
     margin-bottom: 30px;
 
@@ -462,7 +436,7 @@ input[type='serch']:after
 }
 .tour-type_places
 {
-    padding-bottom: 140px;
+    padding-bottom: 125px;
 }
 .tour-type_places h2
 {
@@ -499,7 +473,7 @@ input[type='serch']:after
 }
 .san-francisco
 {
-    background: url(../img/san_francisco.jpg) rgba(0,0,0,1);
+    background: url(../img/san_francisco.jpg) ;
     /*background: rgba(0,0,0,0.4);*/
 }
 .tour-type_places .amason
@@ -518,11 +492,11 @@ input[type='serch']:after
 .deals-bg
 {
     background-image: url(../img/bg_maimn2.jpg);
-    background-size: cover;
-    
+    background-size: 100%   ;
 }
-.deals-bg-rgba{
-    background: rgba(0,0,0,0.1);
+.deals-bg-rgba
+{
+    background: rgba(0,0,0,.2);
 }
 .deals-title .title
 {
@@ -586,6 +560,10 @@ p
 
     padding: 0 30px 30px 0;
 }
+.column img
+{
+    width: 100%;
+}
 .column a
 {
     font-family: 'OpenSans', sans-serif;
@@ -647,7 +625,7 @@ p
     margin: 0 auto;
 
     background: white;
-    background: rgba(0,0,0,1);
+    /*background: rgba(0,0,0,1);*/
 }
 .place
 {
@@ -659,21 +637,27 @@ p
     height: 400px;
     margin: 0;
     padding: 0;
-    background: rgba(0,0,0,0.1);
-}
-.place img:after{
-    width: 100%;
+
     background: rgba(0,0,0,1);
+}
+.place img:after
+{
+    width: 100%;
+    height: 100%;
+    /*  */
 }
 .place img
 {
     width: 100%;
     height: 100%;
+
+    opacity: .5;
 }
 
-/*.gallery-place2{
-    background: rgba(0,0,0,0.1);
-}*/
+.gallery-place2
+{
+    opacity: .7;
+}
 /*
 .gallery-place5{
 background: url(../img/gallery/5.jpg);
@@ -771,6 +755,10 @@ background: url(../img/gallery/6.jpg);
 
     background: #fff;
 }
+.column-news img
+{
+    width: 100%;
+}
 .column-news-right
 {
     float: right;
@@ -795,15 +783,23 @@ background: url(../img/gallery/6.jpg);
 
     text-align: left;
 }
-.autor
+.autor,
+.fa-user
 {
     float: left;
+}
+.fa-user
+{
+    margin-right: 5px;
 }
 .time
 {
     float: right;
 }
-
+.column-news .fa-calendar
+{
+    float: right;
+}
 
 /*ЛАКШАРИ*/
 .luxury-bg
@@ -829,6 +825,7 @@ background: url(../img/gallery/6.jpg);
 .luxury-bg a
 {
     font-size: 18px;
+    line-height: 155px;
 
     display: block;
 
@@ -839,7 +836,7 @@ background: url(../img/gallery/6.jpg);
 
     text-align: center;
     vertical-align: bottom;
-    line-height: 155px;
+
     color: #fff;
     border-radius: 50%;
     background: #47a0ff;
@@ -857,8 +854,9 @@ footer
 {
     background: #fff;
 }
-address a{
-    color:#606060;
+address a
+{
+    color: #606060;
 }
 .footer-info
 {
@@ -903,7 +901,6 @@ address a{
     float: left;
 
     width: 270px;
-
 }
 .follow li
 {
@@ -920,42 +917,18 @@ address a{
     height: 45px;
 
     border-radius: 50%;
-
-    background: #47a0ff
+    background: #47a0ff;
 }
 .follow li a:hover
 {
-    background: red
+    background: red;
 }
 .follow .fa
 {
-    color: #fff;
     margin: 14px;
-}
 
-
-/*тут нужно наверно менять sprite, потомучто соседние иконки видны*/
-/*вобщем переделать*/
-/*.follow li:first-child
-{
-    background: #47a0ff url(../img/spritesheet.png) 30px 60px;
+    color: #fff;
 }
-.follow li:nth-child(2)
-{
-    background: #47a0ff url(../img/spritesheet.png) 48px 32px;
-}
-.follow li:nth-child(3)
-{
-    background: #47a0ff url(../img/spritesheet.png) -5px -240px;
-}
-.follow li:nth-child(4)
-{
-    background: #47a0ff url(../img/spritesheet.png) -5px -266px;
-}
-.follow li:hover
-{
-    opacity: .7;
-}*/
 
 .foot-column-4 input[type='text']
 {
@@ -1016,63 +989,3 @@ address a{
 
     width: 290px;
 }
-/*.design img
-{
-    width:200px;
-    background: url(../img/spritesheet.png) -5px -266px;
-}*/
-
-/*input[type="serch"]::after {
-    background-position: -5px -193px;
-}
-input[type="serch"]::after{
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    background: url(../img/spritesheet.png) no-repeat;
-    background-position: -5px -193px;
-    top: 5px;
-    left: 370px;
-}*/
-
-/*label[for="destination"]::after {
-    background-position: -7px -35px;
-}
-label[for="destination"]:after{
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    background: url(../img/spritesheet.png) -5px -35px;
-    top: 5px;
-    left: 370px;
-}
-
-label[for="tour-type"]::after {
-    background-position: -7px -5px;
-}
-label[for="tour-type"]:after{
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    background: url(../img/spritesheet.png) no-repeat;
-    top: 5px;
-    left: 370px;
-}
-
-label[for="month"]::after {
-    background-position: -7px -5px;
-}
-label[for="month"]:after{
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    background: url(../img/spritesheet.png) no-repeat;
-    top: 5px;
-    left: 370px;
-}*/
-
-
