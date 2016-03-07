@@ -138,13 +138,14 @@
 	}
 	 nav .menu__item{
 		display: block;
-		border: 1px solid #000;
+		/*border: 1px solid #000;*/
 		margin: 0 auto;
 		width: 246px;
 		text-align: center;
 		border-top: 1px solid #533f5a;
 		border-bottom: 1px solid #36283e;
 	}
+	nav .menu__item:nth-child(1),nav .menu__item:nth-child(6){border: none;}
 	.menu__link:hover{
 		background: rgba(43, 34, 49, 1);
 	}
