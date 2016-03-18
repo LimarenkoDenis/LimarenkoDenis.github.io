@@ -17,13 +17,24 @@
 			<div class="logo">Pingbull<span class="logo--head">er</span></div>
 			<nav class="nav">
 				<ul class="menu">
-				    <li class="menu__item menu__item_active"><a class="menu__link">Home</a></li>
+				    <li class="menu__item menu__item_active"><a class="menu__link"><span class="menu__border">Home</span></a></li>
 				    <li class="menu__item"><a class="menu__link">About</a></li>
 				    <li class="menu__item"><a class="menu__link">Blog</a></li>
 				    <li class="menu__item"><a class="menu__link">Products</a></li>
 				    <li class="menu__item"><a class="menu__link">Lorem ipsum.</a></li>
 				    <li class="menu__item"><a class="menu__link">dolor sit amet</a></li>
 				</ul>
+				<div class="dropdown">
+					<a class="menu__link home"><span class="menu__border">Home</span></a>
+					<ul class="drop">	
+						<li class="menu__item item--first"><a class="menu__link first  active">Home</a></li>
+						<li class="menu__item"><a class="menu__link">About</a></li>
+					   	<li class="menu__item"><a class="menu__link">Blog</a></li>
+					   	<li class="menu__item"><a class="menu__link">Products</a></li>
+					   	<li class="menu__item"><a class="menu__link">Lorem ipsum.</a></li>
+					   	<li class="menu__item item--last"><a class="menu__link last">dolor sit amet</a><li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 		<div class="head-bg">
@@ -136,5 +147,7 @@
 		</div>
 	</footer>
 </div>   <!-- wrap -->
+
+<script src="js/main.js"></script>
 </body>
 </html>
