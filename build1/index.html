@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.4/css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.4/css/ion.rangeSlider.skinHTML5.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <form class="credit-form">
+  	<div class="category">
+  	  <label class="category__name" for="weight">Вес изделия</label>
+		  <input class="category__input category__input--weight" id="weight" type="nubmer" value="15 г">
+  	</div>
+
+  	<div class="category">
+  		<label class="category__name" for="metal-sample">Проба металла</label>
+  		<div class="category__input category__select category__select--sample">
+  			<select name="metal-sample" id="metal-sample">
+  				<option value="585">585 проба</option>
+	  			<option value="685">685 проба</option>
+	  			<option value="785">785 проба</option>
+	  		</select>
+  		</div>
+  	</div>
+
+  	<div class="category">
+  		<div class="category__name">
+	  		<input type="checkbox" class="checkbox" id="checkbox" checked />
+	  		<label for="checkbox">Камни и вставка <span class="checkbox-info">да</span></label>
+  		</div>
+  		<div class="category__description category__description-show">
+  			Окончательная оценочная стоимость залога может отличаться от указанной в расчете
+  		</div>
+  	</div>
+
+  	<div class="category">
+  		<label class="category__name plan" for="plan">Тарифный план <span class="plan__info">i</span><span class="plan__hint">Подсказка</span></label>
+  		<div class="category__select category__input">
+	  		<select name="plan" id="plan">
+	  			<option value="">«Простой»</option>
+	  			<option value="">«Средний»</option>
+	  			<option value="">«Высокий»</option>
+	  		</select>
+  		</div>
+  	</div>
+
+  	<div class="category">
+  		<label class="category__name" for="status">Ваш дисконтный статус</label>
+  		<div class="category__select category__input">
+			  <select name="plan" id="status">
+	  			<option value="">Без статуса</option>
+	  			<option value="">Статус</option>
+	  			<option value="">Другой</option>
+	  		</select>
+  		</div>
+  	</div>
+
+  	<div class="category">
+  		<label class="category__name category__name--term" for="term">Срок кредитования до продления</label>
+  		<div class="slider">
+        <input type="text" id="slider-range" name="" value="15" min="1" max="31" />
+		  </div>
+  	</div>
+
+  	<button class="credit-btn">Расчитать кредит</button>
+  </form>
+  
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.4/js/ion.rangeSlider.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
